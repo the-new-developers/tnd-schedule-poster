@@ -11,6 +11,7 @@ public class Event {
         case community = "Community Event"
         case workshop = "Workshop"
         case panel = "Panel"
+        case presentation = "Presentation"
     }
     
     init(title: String, date: String? = "TBA", location: String? = "TBA", eventType: EventType) {
@@ -27,28 +28,23 @@ public class Schedule {
     let isInterested: Bool = true
     
     init() {
-        semester = "Fall 2019"
+        semester = "Winter 2020"
         schedule = [
             
             Event(title: "CSAIT IRL: A Social Event.",
-                  date: "Thursday September 19, 2019, 7pm - 11pm",
+                  date: "Wednesday February 5, 6pm - 10pm",
                   location: "Fennell Campus, The Cellar (back of The Arnie)",
                   eventType: .social),
             
-            Event(title: "The New Developers s01e02: Building Your Portfolio",
-                  date: "Wednesday, September 25, 2019, 5:30pm - 7:30pm",
-            //      location: "TBA",
-                  eventType: .workshop),
+            Event(title: "The New Developers s02e01: Freelancing",
+                  date: "February TBA",
+            //      location: "Fennell Campus, TBA",
+                  eventType: .presentation),
             
-            Event(title: "The New Developers s01e03: Speed Interviewing",
-                  date: "Wednesday, October 30, 2019, 5:30pm - 7:30pm",
-            //      location: "TBA",
-                  eventType: .workshop),
-            
-            Event(title: "The New Developers s01e04: Making the Most of Your First Job",
-            //      date: "TBA",
-            //      location: "TBA",
-                  eventType: .panel)
+            Event(title: "The New Developers s02e02: The Code Review",
+                  date: "March TBA",
+            //      location: "Fennell Campus, TBA",
+                  eventType: .workshop)
         ]
         
         for event in schedule {
